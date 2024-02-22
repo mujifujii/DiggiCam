@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+  <title>
+    DiggiCam
+  </title>
+  <style>
+
+  </style>
+
+  <link rel="stylesheet" href="testdiggo.css">
+</head>
+
+<body>
+      <div class="CanvasundVideoundFotos">
+
+
+        <div class="FotoDivs">
+          <div class="Banana">
+          </div>
+        </div>
+
+        <div class="CanvasundVideo">
+
+          <div class="videoDiv">
+        <video class="video"></video>
+          </div>
+
+          <div class="canvasDiv">
+        <canvas class="canvas"></canvas>
+        </div>
+
+        <div class="FotoDivs">
+          <div class="banana1">
+        </div>
+      </div>
+
+          <div class="Knoepfe">
+            <button class="schnapp" onclick="takePhoto()">SCHNAPP</button>
+            <button class="schnapp" onclick="FotosAnzeigen()">ZEIG MA HER</button>
+          </div>
+        </div>
+
+
+        <div id="popupContainer" class="popupContainer">
+          <div class="popupContent">
+            <button class="schnapp" onclick="closePopup()">SCHLIESSEN</button>
+            <button class="schnapp" onclick="">AUSDRUCKEN</button>
+            <div id="imageContainer"></div>
+          </div>
+          </div>
+        </div>
+
+
+  <div class="FotoWand">
+  <div class="row">
+    <div class="box" id="image-container1"><img src="IMG_0003.JPG" alt="pic"></div>
+    <div class="box" id="image-container2"><img src="IMG_0019.JPG" alt="pic"></div>
+    <div class="box" id="image-container3"><img src="IMG_9339.JPG" alt="pic"></div>
+    <div class="box" id="image-container4"><img src="IMG_0072.JPG" alt="pic"></div>
+    <div class="box" id="image-container5"><img src="IMG_0074.JPG" alt="pic"></div>
+    <div class="box" id="image-container6"><img src="IMG_0075.JPG" alt="pic"></div>
+    <div class="box" id="image-container7"><img src="IMG_0078.JPG" alt="pic"></div>
+    <div class="box" id="image-container8"><img src="IMG_0101.JPG" alt="pic"></div>
+  </div>
+  <div class="row">
+    <div class="box" id="image-container9"><img src="IMG_0148.JPG" alt="pic"></div>
+    <div class="box" id="image-container10"><img src="IMG_0188.JPG" alt="pic"></div>
+    <div class="box" id="image-container11"><img src= "IMG_0196.JPG" alt="pic"></div>
+    <div class="box" id="image-container12"><img src="IMG_0209.JPG" alt="pic"></div>
+    <div class="box" id="image-container13"><img src="IMG_0220.JPG" alt="pic"></div>
+    <div class="box" id="image-container14"><img src="IMG_0235.JPG" alt="pic"></div>
+    <div class="box" id="image-container15"><img src="IMG_0261.JPG" alt="pic"></div>
+    <div class="box" id="image-container16"><img src="IMG_0262.JPG" alt="pic"></div>
+  </div>
+  <div class="row">
+    <div class="box" id="image-container17"><img src="IMG_0263.JPG" alt="pic"></div>
+    <div class="box" id="image-container18"><img src="IMG_0298.JPG" alt="pic"></div>
+    <div class="box" id="image-container19"><img src="IMG_0301.JPG" alt="pic" ></div>
+    <div class="box" id="image-container20"><img src="IMG_0315.JPG" alt="pic"></div>
+    <div class="box" id="image-container21"><img src="IMG_0325.JPG" alt="pic"></div>
+    <div class="box" id="image-container22"><img src="IMG_0339.JPG" alt="pic"></div>
+    <div class="box" id="image-container23"><img src="IMG_0341.JPG" alt="pic"></div>
+    <div class="box" id="image-container24"><img src="IMG_0349.JPG" alt="pic"></div>
+  </div>
+  <div class="row">
+    <div class="box" id="image-container25"><img src="IMG_0358.JPG" alt="pic"></div>
+    <div class="box" id="image-container26"><img src="IMG_0365.JPG" alt="pic"></div>
+    <div class="box" id="image-container27"><img src="IMG_0396.JPG" alt="pic"></div>
+    <div class="box" id="image-container28"><img src="IMG_0424.JPG" alt="pic"></div>
+    <div class="box" id="image-container29"><img src="IMG_0437.JPG" alt="pic"></div>
+    <div class="box" id="image-container30"><img src="IMG_0443.JPG" alt="pic" ></div>
+    <div class="box" id="image-container31"><img src="IMG_0451.JPG" alt="pic"></div>
+    <div class="box" id="image-container32"><img src="IMG_0479.JPG" alt="pic"></div>
+  </div>
+  <div class="row">
+    <div class="box" id="image-container33"><img src="IMG_0487.JPG" alt="pic"></div>
+    <div class="box" id="image-container34"><img src="IMG_0493.JPG" alt="pic"></div>
+    <div class="box" id="image-container35"><img src="IMG_0494.JPG" alt="pic"></div>
+    <div class="box" id="image-container36"><img src="IMG_0498.JPG" alt="pic"></div>
+    <div class="box" id="image-container37"><img src="IMG_0537.JPG" alt="pic"></div>
+    <div class="box" id="image-container38"><img src="IMG_0546.JPG" alt="pic"></div>
+    <div class="box" id="image-container39"><img src="IMG_0555.JPG" alt="pic"></div>
+    <div class="box" id="image-container40"><img src="IMG_0556.JPG" alt="pic"></div>
+
+  </div>
+  <div class="row">
+    <div class="box" id="image-container41"><img src="IMG_0557.JPG" alt="pic"></div>
+    <div class="box" id="image-container42"><img src="IMG_0559.JPG" alt="pic"></div>
+    <div class="box" id="image-container43"><img src="IMG_0561.JPG" alt="pic"></div>
+    <div class="box" id="image-container44"><img src="IMG_0571.JPG" alt="pic"></div>
+    <div class="box" id="image-container45"><img src="IMG_0576.JPG" alt="pic"></div>
+    <div class="box" id="image-container46"><img src="IMG_0626.JPG" alt="pic"></div>
+    <div class="box" id="image-container47"><img src="IMG_0634.JPG" alt="pic"></div>
+    <div class="box" id="image-container48"><img src="IMG_0669.JPG" alt="pic"></div>
+  </div>
+  <div class="row">
+    <div class="box" id="image-container49"><img src="IMG_0708.JPG" alt="pic"></div>
+    <div class="box" id="image-container50"><img src="IMG_0713.JPG" alt="pic"></div>
+    <div class="box" id="image-container51"><img src="IMG_0718.JPG" alt="pic"></div>
+    <div class="box" id="image-container52"><img src="IMG_0736.JPG" alt="pic"></div>
+    <div class="box" id="image-container53"><img src="IMG_0741.JPG" alt="pic"></div>
+    <div class="box" id="image-container54"><img src="IMG_0743.JPG" alt="pic"></div>
+    <div class="box" id="image-container55"><img src="IMG_0748.JPG" alt="pic"></div>
+    <div class="box" id="image-container56"><img src="IMG_0779.JPG" alt="pic"></div>
+  </div>
+  <div class="row">
+    <div class="box" id="image-container57"><img src="IMG_0807.JPG" alt="pic"></div>
+    <div class="box" id="image-container58"><img src="IMG_0816.JPG" alt="pic"></div>
+    <div class="box" id="image-container59"><img src="IMG_0853.JPG" alt="pic"></div>
+    <div class="box" id="image-container60"><img src="IMG_0864.JPG" alt="pic"></div>
+    <div class="box" id="image-container61"><img src="IMG_0871.JPG" alt="pic" ></div>
+    <div class="box" id="image-container62"><img src="IMG_0875.JPG" alt="pic"></div>
+    <div class="box" id="image-container63"><img src="IMG_0880.JPG" alt="pic"></div>
+    <div class="box" id="image-container64"><img src="IMG_0892.JPG" alt="pic"></div>
+  </div>
+</div>
+      <script src="1testdiggo.js"></script>
+</body>
+</html>
